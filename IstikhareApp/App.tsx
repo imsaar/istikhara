@@ -160,40 +160,13 @@ export default function App() {
         {currentVerse && !isLoading && (
           <View style={styles.resultContainer}>
             <VerseDisplay verse={currentVerse} />
-            
-            {!aiAnalysis && (
-              <View style={styles.buttonContainer}>
-                <TouchableOpacity
-                  style={styles.secondaryButton}
-                  onPress={handleAIAnalysis}
-                  disabled={isAILoading}
-                >
-                  <Text style={styles.secondaryButtonText}>
-                    {isAILoading ? 'Analyzing...' : 'Get AI Analysis & Verdict'}
-                  </Text>
-                </TouchableOpacity>
-              </View>
-            )}
-
-            {isAILoading && <LoadingSpinner />}
-
-            {aiAnalysis && <AIAnalysisDisplay analysis={aiAnalysis} />}
           </View>
         )}
 
         <View style={styles.footer}>
           <Text style={styles.footerText}>
-            © 2025 Istikhara App. Quranic texts provided by Tanzil.net and translation by Ali Quli Qarai.
+            © 2025 SAARCOLOGY. Quranic texts provided by Tanzil.net and translation by Ali Quli Qarai.
           </Text>
-          <Text style={styles.footerText}>
-            AI analysis is for reflection and not a definitive religious ruling.
-          </Text>
-          <TouchableOpacity
-            style={styles.apiKeyButton}
-            onPress={() => setShowApiKeyModal(true)}
-          >
-            <Text style={styles.apiKeyButtonText}>Configure API Key</Text>
-          </TouchableOpacity>
         </View>
       </ScrollView>
 

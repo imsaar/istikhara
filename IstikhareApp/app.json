@@ -17,7 +17,7 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.istikhara.app",
+      "bundleIdentifier": "com.saarcology.istikhara",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }
@@ -27,7 +27,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#F0F4FF"
       },
-      "package": "com.istikhara.app"
+      "package": "com.saarcology.istikhara"
     },
     "web": {
       "favicon": "./assets/favicon.png"
